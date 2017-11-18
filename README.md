@@ -2,9 +2,9 @@
 
 Though drawing graphics in Java is fun and eventually easy, getting the surrounding setup right
 can be a real challenge (not only) for beginning programmers.
-This class provides a simple setup for performing non-interactive drawing
+This package provides a simple setup for performing non-interactive drawing
 operations in Java and makes it extremely easy to get started with graphics.
-This software is intended for educational (student) use and thus neither safe nor
+The software is intended for educational (student) use and thus neither safe nor
 recommended for real applications. The implementation is based on Swing and AWT 
 graphics. All standard AWT graphics operations can be used (see the
 <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">
