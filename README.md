@@ -1,9 +1,10 @@
 # JGraphix
 Simple setup for performing non-interactive graphics operations in Java.
+Requires Java 1.8.
 
 ## Installation
 Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
-and add it to your java project (add to build path).
+and add it to your Java project (add to build path).
 
 ## Typical Usage
 
