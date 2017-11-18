@@ -2,7 +2,7 @@
 Simple setup for performing non-interactive graphics operations in Java.
 
 ## Installation
-Download teh JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
+Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
 and add it to your java project (add to build path).
 
 ## Examples
