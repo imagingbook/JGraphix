@@ -8,7 +8,9 @@ import imagingbook.jgraphix.DrawFrame;
 
 /**
  * Sample program demonstrating the use of the {@link DrawFrame} class.
- * Shows the use of basic AWT graphics operations.
+ * Shows the use of basic AWT graphics operations. For details see the
+ * <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">
+ * Graphics2D API documentation</a>.
  * 
  * @author W. Burger
  * @version 2017-11-18

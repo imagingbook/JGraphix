@@ -28,9 +28,11 @@ import javax.swing.filechooser.FileFilter;
  * This class provides a simple setup for performing non-interactive drawing
  * operations in Java. It is intended for educational use and is neither safe nor
  * recommended for real applications. The implementation is based on Swing and AWT 
- * graphics. All standard AWT graphics operations can be used.
- * The current screen graphics can be saved to a PNG file by pressing
- * CTRL+S on the open window.
+ * graphics. All standard AWT graphics operations can be used (see the
+ * <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">
+ * Graphics2D API documentation</a> for details).
+ * The rendered screen graphics can be saved to a PNG file by pressing
+ * Ctrl-s (Windows) or Cmd-s (MacOS) on the open window.
  * <p>
  * Typical usage example:
  * <pre>
@@ -233,10 +235,15 @@ public class DrawFrame extends JFrame implements KeyListener {
 	@Override
 	public void keyTyped(KeyEvent e) {
 	}
+	
+	// KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_C, KeyEvent.CTRL_DOWN_MASK);
+	// KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_C, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask());
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-	    if (e.isControlDown() && e.getKeyCode() == KeyEvent.VK_S) {
+		// Windows: CTRL-S (e.isControlDown())
+		// MacOS: CTRL-S (e.isMetaDown())
+	    if ((e.isControlDown() || e.isMetaDown()) && e.getKeyCode() == KeyEvent.VK_S) {
 	    	File f = selectFile();
 	    	if (f != null) {
 	    		saveTo(f);
