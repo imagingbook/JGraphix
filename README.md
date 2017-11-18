@@ -1,4 +1,4 @@
-# JGraphix &ndash; a simple setup for doing 2D graphics in Java
+# JGraphix &ndash; a simple setup for creating 2D graphics in Java
 
 Though drawing graphics in Java is fun and eventually easy, getting the surrounding setup right
 can be a real challenge (not only) for beginning programmers.
