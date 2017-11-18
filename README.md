@@ -1,6 +1,18 @@
-# JGraphix
-Simple setup for performing non-interactive graphics operations in Java.
-Requires Java 1.8.
+# JGraphix &ndash; a simple setup for non-interactive graphics in Java
+
+Though drawing graphics in Java is fun and eventually easy, getting the surrounding setup right
+can be a real challenge (not only) for beginning programmers.
+This class provides a simple setup for performing non-interactive drawing
+operations in Java and makes it extremely easy to get started with graphics.
+This software is intended for educational (student) use and thus neither safe nor
+recommended for real applications. The implementation is based on Swing and AWT 
+graphics. All standard AWT graphics operations can be used (see the
+<a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">
+Graphics2D API documentation</a> for details).
+The rendered screen graphics can be saved to a PNG file by pressing
+Ctrl-s (Windows) or Cmd-s (MacOS) on the open window.
+
+Requires Java 1.7 or higher.
 
 ## Installation
 Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
