@@ -49,7 +49,7 @@ df.refresh();	// display drawing
 ...  
 ````
 
-## Examples
+## More Examples
 https://github.com/imagingbook/JGraphix/tree/master/examples
 
 ## Documentation
