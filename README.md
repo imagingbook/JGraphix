@@ -7,8 +7,10 @@ operations in Java and makes it extremely easy to get started with graphics.
 The software is intended for educational (student) use and thus neither safe nor
 recommended for real applications. The implementation is based on Swing and AWT 
 graphics. All standard AWT graphics operations can be used (see the
-<a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">
-Graphics2D API documentation</a> for details).
+<a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics.html">Graphics</a> 
+and
+<a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Graphics2D.html">Graphics2D</a> 
+API documentation for details).
 The rendered screen graphics can be saved to a PNG file by pressing
 Ctrl-s (Windows) or Cmd-s (MacOS) on the open window.
 
