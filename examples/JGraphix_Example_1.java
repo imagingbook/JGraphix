@@ -20,13 +20,11 @@ public class JGraphix_Example_1 {
 	public static void main(String[] args) {
 		DrawFrame df = DrawFrame.create("MyDrawing", 200, 300);
 		Graphics2D g = df.getGraphics2D();
-
-		Color fillColor = Color.GREEN;
-		Color strokeColor = Color.BLUE;
-
-		g.setStroke(new BasicStroke(5)); // line width = 5 pixels
-		g.setColor(strokeColor);
-
+		
+		float linewidth = 5.0f;	// line width = 5 pixels
+		g.setStroke(new BasicStroke(linewidth));
+		
+		g.setColor(Color.BLUE);
 		g.drawLine(40, 10, 10, 40);
 		g.draw(new Line2D.Double(70.2, 10.3, 100.4, 40.5));
 
@@ -35,26 +33,27 @@ public class JGraphix_Example_1 {
 		g.fillRoundRect(110, 60, 30, 30, 10, 10);
 		g.drawRoundRect(160, 60, 30, 30, 10, 10);
 
-		g.setColor(fillColor);
+		g.setColor(Color.GREEN.darker());
 		g.fillArc(10, 110, 30, 30, 45, 240);
-		g.fillArc(60, 110, 30, 30, 45, 240);
-		g.fillArc(110, 110, 30, 30, 45, 240);
+		g.fillArc(60, 110, 30, 30, 45 + 240, 360 - 240);
+		g.fillArc(110, 110, 30, 30, 90, 270);
+		g.fillArc(160, 110, 30, 30, 270, 270);
 
 		g.setColor(Color.MAGENTA);
 		g.drawArc(10, 160, 30, 30, 45, 240);
-		g.drawArc(60, 160, 30, 30, 45, 240);
-		g.drawArc(110, 160, 30, 30, 45, 240);
+		g.drawArc(60, 160, 30, 30, 45 + 240, 360 - 240);
+		g.drawArc(110, 160, 30, 30, 90, 270);
+		g.drawArc(160, 160, 30, 30, 270, 270);
 
-		g.setColor(fillColor);
+		g.setColor(Color.ORANGE);
 		g.fillPolygon(new int[] { 10, 40, 10, 40 }, new int[] { 210, 210, 240, 240 }, 4);
-
-		g.setColor(strokeColor);
 		g.drawPolygon(new int[] { 60, 90, 60, 90 }, new int[] { 210, 210, 240, 240 }, 4);
 		g.drawPolyline(new int[] { 110, 140, 110, 140 }, new int[] { 210, 210, 240, 240 }, 4);
+		g.drawPolyline(new int[] { 160, 160, 190, 190 }, new int[] {240, 210, 240, 210 }, 4);
 
 		// Printing texts
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Monospaced", Font.PLAIN, 12));
+		g.setFont(new Font("Monospaced", Font.PLAIN, 14));
 		g.drawString("Drawn with JGraphix", 10, 275);
 
 		df.refresh();
