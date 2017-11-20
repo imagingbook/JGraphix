@@ -4,7 +4,7 @@ Though drawing graphics in Java is fun and eventually easy, getting the surround
 can be a real challenge (not only) for beginning programmers.
 This package provides a simple setup for performing non-interactive drawing
 operations in Java and makes it extremely easy to get started with graphics. 
-No need to understand callbacks, listeners or similar advanced concepts.
+No need to know about listeners, callbacks, threads or similar advanced concepts.
 The software is intended for educational (student) use and thus neither safe nor
 recommended for real applications. The implementation is based on Swing and AWT 
 graphics. All standard AWT graphics operations can be used (see the
