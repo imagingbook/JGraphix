@@ -19,9 +19,9 @@ Requires Java 1.7 or higher.
 
 ## Installation
 
-* **Version 1:** Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
+* **Option 1:** Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
 and add it to your Java project (add to build path).
-* **Version 2:** Clone this repository and open the contained (Eclipse) project.
+* **Option 2:** Clone this repository and open the contained (Eclipse) project.
 
 ## Typical Usage
 
