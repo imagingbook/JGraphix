@@ -3,7 +3,8 @@
 Though drawing graphics in Java is fun and eventually easy, getting the surrounding setup right
 can be a real challenge (not only) for beginning programmers.
 This package provides a simple setup for performing non-interactive drawing
-operations in Java and makes it extremely easy to get started with graphics.
+operations in Java and makes it extremely easy to get started with graphics. 
+No need to understand callbacks, listeners or similar advanced concepts.
 The software is intended for educational (student) use and thus neither safe nor
 recommended for real applications. The implementation is based on Swing and AWT 
 graphics. All standard AWT graphics operations can be used (see the
@@ -17,8 +18,10 @@ Ctrl-s (Windows) or Cmd-s (MacOS) on the open window.
 Requires Java 1.7 or higher.
 
 ## Installation
-Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
+
+* **Version 1:** Download the JAR file from https://github.com/imagingbook/JGraphix/tree/master/jars
 and add it to your Java project (add to build path).
+* **Version 2:** Clone this repository and open the contained (Eclipse) project.
 
 ## Typical Usage
 
