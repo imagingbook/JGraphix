@@ -15,8 +15,9 @@ API documentation for details).
 The rendered screen graphics can be saved to a PNG file by pressing
 Ctrl-s (Windows) or Cmd-s (MacOS) on the open window.
 
-![Example 1](docs/img/example1-framed.png)  
-![Example 3](docs/img/example4.png)
+![Example 1](docs/img/example1-framed.png)
+![Example 3](docs/img/example3.png)  
+![Example 4](docs/img/example4.png)
 
 
 
