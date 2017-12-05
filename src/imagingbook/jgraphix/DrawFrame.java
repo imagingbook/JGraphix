@@ -303,5 +303,20 @@ public class DrawFrame extends JFrame implements KeyListener {
         	System.out.println("Drawing saved to " + file.getAbsolutePath());
         return success;
     }
+    
+	// -------------------------------------------------------------------------------	
+    
+    /**
+     * Suspend program execution for the specified time.
+     * This is only an exception-free (convenience) wrapper around the
+     * {@link java.lang.Thread#sleep(long)} method.
+     * 
+     * @param ms time to wait in milliseconds
+     */
+    public static void sleep(long ms) {
+    	try {
+			Thread.sleep(ms);
+		} catch (InterruptedException e) { }
+    }
 
 }
