@@ -12,20 +12,20 @@ import imagingbook.jgraphix.DrawFrame;
  */
 public class JGraphix_Example_2 {
 
-	public static void main(String[] args) {
-		DrawFrame df = DrawFrame.create();
-		Graphics2D g = df.getGraphics2D();
+    public static void main(String[] args) {
+	DrawFrame df = DrawFrame.create();
+	Graphics2D g = df.getGraphics2D();
 
-		g.setColor(Color.BLUE);
+	g.setColor(Color.BLUE);
 
-		for (int i = 0; i < 100; i++) {
-			df.clear();
-			g.fillOval(80 + 3 * i, 40 + 2 * i, 30, 30 + i);
-			df.refresh();
-			DrawFrame.sleep(25); // wait for 25 ms
-		}
-
-		System.out.println("done");
+	for (int i = 0; i < 100; i++) {
+	    df.clear();
+	    g.fillOval(80 + 3 * i, 40 + 2 * i, 30, 30 + i);
+	    df.refresh();
+	    DrawFrame.sleep(25); // wait for 25 ms
 	}
+
+	System.out.println("done");
+    }
 
 }
